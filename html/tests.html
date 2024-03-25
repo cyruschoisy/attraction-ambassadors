@@ -19,6 +19,13 @@
 </head>
 
 <body>
+  <style>
+    .rainbow-box {
+      width: 100%;
+      height: 10px;
+      background: linear-gradient(90deg, #ff424f 0%, #ff6830 10%, #ff8b0f 20%, #92af63 30%, #1b9cf7 40%, #7c72e8 50%, #ff424f 60%, #ff6830 70%, #ff8b0f 80%, #92af63 90%, #1b9cf7 100%);
+    }
+  </style>
   <header>
     <div class="container-fluid px-5 py-2 home-nav text-center">
       <nav class="navbar navbar-expand-lg justify-content-center text-center">
@@ -59,71 +66,207 @@
   </header>
 
   <main>
+    <div class="container-fluid p-0">
+      <div class="rainbow-box"></div>
       <div class="container-fluid p-5">
-         <div class="container">
-         <div class="container-fluid p-0">
-            <div class="row">
-               <h1 class="text-center">Magnet Testing</h1>
-               <h3 class="text-center">9V – 50 N Electric Lifting Magnet</h3>
-               <div class="col pt-3 justify-content-center text-center">
-                <img src="../assets/test/test1/IMG_5599.JPG" alt="" class="w-25 img-fluid rounded shadow">
-                <img src="../assets/test/test1/IMG_5601.JPG" alt="" class="w-25 img-fluid rounded shadow">
-               </div>
-
-               <div class="col-md pt-3">
-               <h5 class="pt-3">Pros</h5>
-               <ul>
-                  <li>Overall size: 25 x 20 mm</li>
-                  <li>$ 13.49 + tax</li>
-               </ul>
-
-               <h5>Cons</h5>
-               <ul>
-                  <li>Lack of penetrability through 1/8” MDF</li>
-               </ul>
-               </div>
-            </div>
-         </div>
-
-         <div class="row pt-3">
-            <h3 class="text-center">12V – 400 N Electric Lifting Magnet</h3>
-            <div class="col-md pt-3 justify-content-center text-center">
-              <img src="../assets/test/test1/IMG_5630.JPG" alt="" class="w-50 rounded shadow">
-            </div>
-            <div class="col-md pt-3">
-              <h5 class="pt-3">Pros</h5>
-              <ul>
-                <li>Can penetrate through 1/8” of MDF</li>
-              </ul>
-
-              <h5>Cons</h5>
-              <ul>
-                <li>$ 17.99 + tax</li>
-                <li>Overall size: 49 x 22 mm</li>
-                <li>Use of three neodymium magnets will produce a strong enough magnetic force to hold onto the steel door through a 3/32” wood veneer. </li>
-              </ul>
-            </div>
-         </div>
-
-         <div class="row pt-3">
-            <h3 class="text-center">Neodymium Bar Magnets</h3>
-            <div class="col-md pt-3 text-center">
-              <img src="../assets/test/test1/IMG_5846.JPG" alt="" class="w-50 rounded shadow">
-            </div>
-            <div class="col-md pt-3">
-               <h5 class="pt-3">Pros</h5>
-               <ul>
-                <li>Can penetrate through 1/8” of MDF</li>
-                <li>Replaces the wiring through the jig</li>
-               </ul>
-
-               <h5>Cons</h5>
-               <ul>
-                <li>Needs to be handled with care</li>
-               </ul>
-            </div>
-         </div>
-         </div>
+        <div class="container text-center">
+          <a type="button" class="btn btn-primary my-1" onclick="document.getElementById('magnet').scrollIntoViewIfNeeded()">Magnet Testing</a>
+          <a type="button" class="btn btn-primary my-1" onclick="document.getElementById('hinge').scrollIntoViewIfNeeded()">Hinge Testing</a>
+          <a type="button" class="btn btn-primary my-1" onclick="document.getElementById('infill').scrollIntoViewIfNeeded()">Infill Testing</a>
+          <a type="button" class="btn btn-primary my-1" onclick="document.getElementById('simulation').scrollIntoViewIfNeeded()">Simulation Testing</a>
+        </div>
       </div>
+      <div class="rainbow-box"></div>
+    </div>
+    
+    <div class="container-fluid p-5">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center" id="magnet">Magnet Testing</h1>
+          <h3 class="text-center">9V – 50 N Electric Lifting Magnet</h3>
+
+          <div class="col pt-3 justify-content-center text-center">
+            <img src="../assets/test/test1/IMG_5599.JPG" alt="" class="w-25 img-fluid rounded shadow">
+            <img src="../assets/test/test1/IMG_5601.JPG" alt="" class="w-25 img-fluid rounded shadow">
+          </div>
+
+          <div class="col-md pt-3">
+            <h5 class="pt-3">Pros</h5>
+            <ul>
+              <li>Overall size: 25 x 20 mm</li>
+              <li>$ 13.49 + tax</li>
+            </ul>
+
+            <h5>Cons</h5>
+            <ul>
+              <li>Lack of penetrability through 1/8” MDF</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pt-3">
+        <h3 class="text-center">12V – 400 N Electric Lifting Magnet</h3>
+        <div class="col-md pt-3 justify-content-center text-center">
+          <img src="../assets/test/test1/IMG_5630.JPG" alt="" class="w-50 rounded shadow">
+        </div>
+        <div class="col-md pt-3">
+          <h5 class="pt-3">Pros</h5>
+          <ul>
+            <li>Can penetrate through 1/8” of MDF</li>
+          </ul>
+
+          <h5>Cons</h5>
+          <ul>
+            <li>$ 17.99 + tax</li>
+            <li>Overall size: 49 x 22 mm</li>
+            <li>Use of three neodymium magnets will produce a strong enough magnetic force to hold onto the steel door through a 3/32” wood veneer. </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row pt-3">
+        <h3 class="text-center">Neodymium Bar Magnets</h3>
+        <div class="col-md pt-3 text-center">
+          <img src="../assets/test/test1/IMG_5846.JPG" alt="" class="w-50 rounded shadow">
+        </div>
+        <div class="col-md pt-3">
+          <h5 class="pt-3">Pros</h5>
+          <ul>
+            <li>Can penetrate through 1/8” of MDF</li>
+            <li>Replaces the wiring through the jig</li>
+          </ul>
+
+          <h5>Cons</h5>
+          <ul>
+            <li>Needs to be handled with care</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="rainbow-box"></div>
+
+    <div class="container-fluid p-5">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center" id="hinge">Hinge Testing</h1>
+          <h3 class="text-center">3D Printed PLA Hinges (Friction fit)</h3>
+
+          <div class="col pt-3 justify-content-center text-center">
+            <img src="../assets/test/test2/20240324_170414942_iOS.jpg" alt="" class="w-25 img-fluid rounded shadow">
+            <img src="../assets/test/test2/20240324_170449082_iOS.jpg" alt="" class="w-25 img-fluid rounded shadow">
+          </div>
+
+          <div class="col-md pt-3">
+            <h5 class="pt-3">Pros</h5>
+            <ul>
+              <li>Prints in place, easy to manufacture</li>
+            </ul>
+
+            <h5>Cons</h5>
+            <ul>
+              <li>Not securely mounted onto the rest of the components</li>
+              <li>Friction fit wears out</li>
+              <li>Each layer was difficult to print</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <h3 class="text-center">Hinges (Bolt + Nut)</h3>
+
+          <div class="col pt-3 justify-content-center text-center">
+            <img src="../assets/test/test2/20240324_170517175_iOS.jpg" alt="" class="w-25 img-fluid rounded shadow">
+            <img src="../assets/test/test2/20240324_170520016_iOS.jpg" alt="" class="w-25 img-fluid rounded shadow">
+          </div>
+
+          <div class="col-md pt-3">
+            <h5 class="pt-3">Pros</h5>
+            <ul>
+              <li>Moving parts will not wear out by friction</li>
+              <li>Can be disassembled in the event of a component needing repair</li>
+              <li>100% infill makes the component sturdy</li>
+            </ul>
+
+            <h5>Cons</h5>
+            <ul>
+              <li>Getting the hinge to move when first printed requires an adequate amount of force</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rainbow-box"></div>
+
+    <div class="container-fluid p-5">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center" id="infill">Infill Testing</h1>
+          <h3 class="text-center">Hinge Midpiece (Lightning infill pattern)</h3>
+
+          <div class="col pt-3 justify-content-center text-center">
+            <img src="../assets/test/test3/IMG_6199.JPG" alt="" class="w-25 img-fluid rounded shadow">
+            <img src="../assets/test/test3/IMG_6201.JPG" alt="" class="w-25 img-fluid rounded shadow">
+          </div>
+
+          <div class="col-md pt-3">
+            <h5 class="pt-3">Pros</h5>
+            <ul>
+              <li>Printing time was reduced, even at 100% infill</li>
+            </ul>
+
+            <h5>Cons</h5>
+            <ul>
+              <li>Sections that did not have the hinge were hollow</li>
+              <li>Would not survive day-to-day wear and tear</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <h3 class="text-center">Hinges (Bolt + Nut)</h3>
+
+          <div class="col pt-3 justify-content-center text-center">
+            <img src="../assets/test/test3/20240324_170554544_iOS.jpg" alt="" class="w-50 img-fluid rounded shadow">
+          </div>
+
+          <div class="col-md pt-3">
+            <h5 class="pt-3">Pros</h5>
+            <ul>
+              <li>Solid and feels higher quality</li>
+              <li>Won’t break when pressing into it</li>
+            </ul>
+
+            <h5>Cons</h5>
+            <ul>
+              <li>Longer print time</li>
+              <li>More filament used</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rainbow-box"></div>
+
+    <div class="container-fluid p-5">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center" id="simulation">Simulation Testing</h1>
+          <h3 class="text-center">Hinge Midpiece (Lightning infill pattern)</h3>
+
+          <div class="col pt-3 justify-content-center text-center">
+            <img src="../assets/test/test4/matlab.png" alt="" class="w-100 img-fluid rounded shadow">
+            
+          </div>
+          <div class="col pt-3 justify-content-center text-center">
+            <img src="../assets/test/test4/matlabss.png" alt="" class="w-100 img-fluid rounded shadow">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rainbow-box"></div>
   </main>
 </body>
